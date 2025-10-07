@@ -14,7 +14,23 @@ String checarTriangulo(List<int> lados) {
     return 'Los lados del triángulo deben ser mayores que cero';
   }
 
+  if (a + b <= c || a + c <= b || b + c <= a) {
+    return 'No es un triángulo';
+  }
 
+  if(a == b && b == c) {
+    return 'El triángulo es equilátero';
+  } else if (a == b && a !=c) {
+    return 'El triángulo es isosceles';
+  } else if (a==c && a!=b) {
+    return 'El triángulo es isosceles';
+  } else if(b==c && b!=a) {
+    return 'El triangulo es isosceles';
+  }
 
-  return "";
-}
+  
+  
+  return 'aaaaaaaaaa';
+
+  }
+
