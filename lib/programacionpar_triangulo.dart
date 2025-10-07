@@ -26,11 +26,9 @@ String checarTriangulo(List<int> lados) {
     return 'El triángulo es isosceles';
   } else if(b==c && b!=a) {
     return 'El triangulo es isosceles';
+  } else {
+    return 'El triángulo es escaleno';
   }
-
-  
-  
-  return 'aaaaaaaaaa';
 
   }
 
