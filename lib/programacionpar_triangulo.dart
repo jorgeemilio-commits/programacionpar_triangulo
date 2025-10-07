@@ -11,11 +11,11 @@ String checarTriangulo(List<int> lados) {
   int c = lados[2];
 
   if (a <= 0 || b <= 0 || c <= 0) {
-    return 'Los lados del triángulo deben ser mayores que cero';
+    throw ArgumentError('Los lados del triángulo deben ser mayores que cero');
   }
 
   if (a + b <= c || a + c <= b || b + c <= a) {
-    return 'No es un triángulo';
+    throw ArgumentError('No es un triángulo válido');
   }
 
   if(a == b && b == c) {
